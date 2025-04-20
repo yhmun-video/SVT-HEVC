@@ -271,13 +271,13 @@ typedef struct EB_H265_ENC_CONFIGURATION
      * Default is 60. */
     uint32_t                frameRate;
 
-    /* Frame rate numerator. When zero, the encoder will use –fps if
+    /* Frame rate numerator. When zero, the encoder will use ï¿½fps if
      * FrameRateDenominator is also zero, otherwise an error is returned.
      *
      * Default is 0. */
     int32_t                 frameRateNumerator;
 
-    /* Frame rate denominator. When zero, the encoder will use –fps if
+    /* Frame rate denominator. When zero, the encoder will use ï¿½fps if
      * FrameRateNumerator is also zero, otherwise an error is returned.
      *
      * Default is 0. */

@@ -1,3 +1,21 @@
+# Meson Build Edition
+
+[![Build Status](https://github.com/yhmun-video/SVT-HEVC/actions/workflows/actions.yml/badge.svg)](https://github.com/yhmun-video/SVT-HEVC)
+
+## Build and Install
+- __Build Requirements__
+  - Meson 1.1.0 or later (Getting [here](https://mesonbuild.com/Getting-meson.html))
+  - YASM Assembler version 1.2.0 or later (NASM Assembler is supported)
+- __Build Instructions__
+  - Prepare build
+    - Run `meson setup Build/meson [--buildtype debug|release] [--default-library shared|static]`
+  - Run build
+    - Run `meson compile -C Build/meson`
+  - Install build
+    - Run `meson install -C Build/meson`
+
+--------------------------------------------------------------
+
 # Scalable Video Technology for HEVC Encoder (SVT-HEVC Encoder)
 
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/openvisualcloud/SVT-HEVC?branch=master&svg=true)](https://ci.appveyor.com/project/openvisualcloud/SVT-HEVC)

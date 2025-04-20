@@ -1,0 +1,3 @@
+option('BUILD_APP', type: 'boolean', value: true, description: 'Build Enc App')
+
+option('NATIVE', type: 'boolean', value: false, description: 'Build for native performance (march=native)')

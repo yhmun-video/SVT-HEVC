@@ -1,0 +1,6 @@
+subdir('C_DEFAULT')
+subdir('ASM_SSE2')
+subdir('ASM_SSSE3')
+subdir('ASM_SSE4_1')
+subdir('ASM_AVX2')
+subdir('Codec')
