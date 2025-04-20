@@ -1,0 +1,23 @@
+name: build
+
+on: [push]
+
+jobs:
+  cmake-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Set up NASM
+        uses: ilammy/setup-nasm@v1
+      - name: Run build
+        run: Build/linux/build.sh release
+  cmake-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Set up NASM
+        uses: ilammy/setup-nasm@v1
+      - name: Run build
+        run: Build/windows/build.bat release
